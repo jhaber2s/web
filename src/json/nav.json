@@ -1,0 +1,117 @@
+{
+    "nav": [
+        {
+            "Titel": "HTML und CSS",
+            "Aufgaben": [
+                "Erfolgsprinzipien des WWW",
+                "HTML-Literatur",
+                "HTML-Wireframe",
+                "Wireframe mit HTML und CSS",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "Responsive Web Design",
+            "Aufgaben": [
+                "Responsiv mit Flexbox Desktop-First",
+                "Responsiv mit Flexbox Mobile-First",
+                "Responsiv mit Grid Layout Desktop-First",
+                "Responsiv mit Grid Layout Mobile-First",
+                "Mögliche Klausurfragen"
+            ]
+        },
+        {
+            "Titel": "JavaScript",
+            "Aufgaben": [
+                "Funktionen in JavaScript",
+                "JavaScript-Objekte",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "DOM",
+            "Aufgaben": [
+                "Einkaufsliste",
+                "Rednerliste mit Zeitmessung",
+                "Performanzmessungen",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "Asynchrones JavaScript",
+            "Aufgaben": [
+                "Promises",
+                "async,await",
+                "WWW-Navigator",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "Lit Elemente",
+            "Aufgaben": [
+                "Counter mit Start und Limit",
+                "Stoppuhr",
+                "Flexible Menü-Komponente",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "SVG",
+            "Aufgaben": [
+                "SVG-Diagramm",
+                "Statistik-Balkendiagramm",
+                "Bezier-Animation",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "WebApps",
+            "Aufgaben": [
+                "Routing",
+                "State Management"
+            ]
+        },
+        {
+            "Titel": "Vue.js",
+            "Aufgaben": [
+                "Counter in Vue.js",
+                "Menü-Komponente",
+                "Vue.js WWW-Navigator",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "MEVN",
+            "Aufgaben": [
+                "Erweiterung der MEVN-App",
+                "MEVN WWW-Navigator",
+                "Mögliche Klausuraufgaben"
+            ]
+        },
+        {
+            "Titel": "PHP",
+            "Aufgaben": [
+                "Registrierung mit PHP",
+                "Login mit PHP",
+                "WWW-Navigator zum Content-Editor ausbauen",
+                "Code Review zu Vue.js"
+            ]
+        },
+        {
+            "Titel": "React",
+            "Aufgaben": [
+                "React Tutorial"
+            ]
+        },
+        {
+            "Titel": "Web App Security",
+            "Aufgaben": [
+                "XSS",
+                "Sicherer Array Wrapper",
+                "Sicherheitslücken finden",
+                "Mögliche Klausuraufgaben"
+            ]
+        }
+    ]
+  
+}

@@ -1,28 +1,81 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+ <div id="body"> 
+  
+      <div id="titel"> Titel
+      <p>Huasarbeit Web Enginering </p>
+      </div>
+     <div id="topnav"><topnav></topnav></div>
+      <div id="sidenav">Sidenav</div>
+      <div id="content">Content</div>
+      <div id="footer">Footer</div>
+
+ 
+
+
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import topnav from './components/topnav.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    topnav
+  
   }
+  
+  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#body{
+  width: 100%;
+
+
+
+
+display: grid;
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-rows: auto;
+grid-template-areas: 
+"titel titel titel titel titel"
+"topnav topnav topnav topnav topnav"
+"sidenav content content content content"
+"sidenav content content content content"
+"sidenav content content content content"
+"sidenav content content content content"
+"sidenav content content content content"
+". footer footer footer .";
+
+
 }
+#titel{
+  grid-area: titel;
+ 
+background-color: blue;
+
+}
+#topnav{
+
+  grid-area: topnav;
+  background-color: red;
+}
+
+#sidenav{
+  grid-area:sidenav;
+  background-color: green;
+}
+#content{
+  grid-area:content;
+
+}
+#footer{
+
+grid-area:footer
+
+}
+
 </style>
