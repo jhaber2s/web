@@ -1,81 +1,80 @@
 <template>
- <div id="body"> 
-  
-      <div id="titel"> Titel
-      <p>Huasarbeit Web Enginering </p>
-      </div>
-     <div id="topnav"><topnav></topnav></div>
-      <div id="sidenav">Sidenav</div>
-      <div id="content">Content</div>
-      <div id="footer">Footer</div>
-
- 
-
-
- </div>
+  <div id="body">
+    <div id="titel">
+      Titel
+      <p>Huasarbeit Web Enginering</p>
+    </div>
+    <div id="topnav">
+      <topnav v-on:setsidenav="setSidenav"></topnav>
+    </div>
+    <div id="sidenav">
+      <sidenav v-bind:aufgaben="this.aufgaben"></sidenav>
+    </div>
+    <div id="content">Content</div>
+    <div id="footer">Footer</div>
+  </div>
 </template>
 
 <script>
-import topnav from './components/topnav.vue'
-
+import topnav from "./components/topnav.vue";
+import sidenav from "./components/sidenav.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    topnav
-  
-  }
-  
-  
-}
+    topnav,
+    sidenav,
+  },
+  data: function () {
+    return {
+      aufgaben:Array,
+    };
+  },
+
+  methods: {
+    setSidenav(aufgaben) {
+     this.aufgaben =aufgaben
+      console.log(this.aufgaben);
+    },
+  },
+};
 </script>
 
 <style>
-#body{
+#body {
   width: 100%;
 
-
-
-
-display: grid;
-grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-rows: auto;
-grid-template-areas: 
-"titel titel titel titel titel"
-"topnav topnav topnav topnav topnav"
-"sidenav content content content content"
-"sidenav content content content content"
-"sidenav content content content content"
-"sidenav content content content content"
-"sidenav content content content content"
-". footer footer footer .";
-
-
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "titel titel titel titel titel"
+    "topnav topnav topnav topnav topnav"
+    "sidenav content content content content"
+    "sidenav content content content content"
+    "sidenav content content content content"
+    "sidenav content content content content"
+    "sidenav content content content content"
+    ". footer footer footer .";
 }
-#titel{
+#titel {
   grid-area: titel;
- 
-background-color: blue;
 
+  background-color: blue;
 }
-#topnav{
-
+#topnav {
   grid-area: topnav;
   background-color: red;
 }
 
-#sidenav{
-  grid-area:sidenav;
+#sidenav {
+  grid-area: sidenav;
   background-color: green;
 }
-#content{
-  grid-area:content;
-
+#content {
+  grid-area: content;
 }
-#footer{
-
-grid-area:footer
-
+#footer {
+  grid-area: footer;
 }
-
 </style>
