@@ -16,9 +16,7 @@
     <div id="footer">Footer</div>
 
    <div id = "junk">
-     <U2A1></U2A1>
-      <U2A2></U2A2>
-      <U2A3></U2A3>
+    
    </div>
 
   </div>
@@ -32,6 +30,7 @@ import sidenav from "./components/sidenav.vue";
  import U2A1 from "./components/Uebungen/U2/U2A1.vue"
  import U2A2 from "./components/Uebungen/U2/U2A2.vue"
   import U2A3 from "./components/Uebungen/U2/U2A3.vue"
+  import U2A4 from "./components/Uebungen/U2/U2A4.vue"
 
 export default {
   name: "App",
@@ -42,6 +41,7 @@ export default {
     U2A1,
     U2A2,
     U2A3,
+    U2A4
   },
   data: function () {
     return {
