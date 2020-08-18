@@ -2,13 +2,13 @@
     "nav": [
         {
             "Titel": "HTML und CSS",
-            "Aufgaben": [
-                "Erfolgsprinzipien des WWW",
-                "HTML-Literatur",
-                "HTML-Wireframe",
-                "Wireframe mit HTML und CSS",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+                "U2A1":"Erfolgsprinzipien des WWW",
+                "U2A2":"HTML-Literatur",
+                "U2A3":"HTML-Wireframe",
+                "U2A4":"Wireframe mit HTML und CSS"
+       
+            }
         },
         {
             "Titel": "Responsive Web Design",

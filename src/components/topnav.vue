@@ -17,7 +17,7 @@ export default {
 
   methods: {
     setSidenav( aufgaben ){
-      
+      console.log(aufgaben)
       this.$emit("setsidenav",aufgaben)
 
     },

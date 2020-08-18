@@ -1,8 +1,8 @@
 <template>
   <div>
 
-      <button v-for="Thema in aufgaben" v-bind:key="Thema">{{Thema}}</button>
-     -
+      <button v-for="(aufgabe,key) in aufgaben" v-bind:key="key" @click="openAufgabe(key)">{{aufgabe}}</button>
+     
     
   </div>
 </template>
@@ -24,9 +24,9 @@ export default {
   },
 
   methods: {
-      log(){
+      openAufgabe(aufgabe){
 
-          console.log(this.aufgaben)
+          this.$emit("openAufgabe",aufgabe)
       }
 
   },
@@ -41,5 +41,7 @@ export default {
 div {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>

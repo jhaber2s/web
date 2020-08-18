@@ -8,10 +8,19 @@
       <topnav v-on:setsidenav="setSidenav"></topnav>
     </div>
     <div id="sidenav">
-      <sidenav v-bind:aufgaben="this.aufgaben"></sidenav>
+      <sidenav v-on:openAufgabe="openAufgabe" v-bind:aufgaben="this.aufgaben"></sidenav>
     </div>
-    <div id="content">Content</div>
+    <div id="content">
+      <component v-bind:is="aktuelleAufgabe"> </component>
+    </div>
     <div id="footer">Footer</div>
+
+   <div id = "junk">
+     <U2A1></U2A1>
+      <U2A2></U2A2>
+      <U2A3></U2A3>
+   </div>
+
   </div>
 </template>
 
@@ -19,15 +28,25 @@
 import topnav from "./components/topnav.vue";
 import sidenav from "./components/sidenav.vue";
 
+
+ import U2A1 from "./components/Uebungen/U2/U2A1.vue"
+ import U2A2 from "./components/Uebungen/U2/U2A2.vue"
+  import U2A3 from "./components/Uebungen/U2/U2A3.vue"
+
 export default {
   name: "App",
   components: {
     topnav,
     sidenav,
+
+    U2A1,
+    U2A2,
+    U2A3,
   },
   data: function () {
     return {
-      aufgaben:Array,
+      aufgaben:Object,
+      aktuelleAufgabe:String,
     };
   },
 
@@ -35,6 +54,9 @@ export default {
     setSidenav(aufgaben) {
      this.aufgaben =aufgaben
       console.log(this.aufgaben);
+    },
+    openAufgabe(aufgabe){
+      this.aktuelleAufgabe = aufgabe
     },
   },
 };
@@ -49,13 +71,13 @@ export default {
   grid-template-rows: auto;
   grid-template-areas:
     "titel titel titel titel titel"
-    "topnav topnav topnav topnav topnav"
+    ". topnav topnav topnav topnav"
     "sidenav content content content content"
     "sidenav content content content content"
     "sidenav content content content content"
     "sidenav content content content content"
     "sidenav content content content content"
-    ". footer footer footer .";
+    "footer footer footer footer footer";
 }
 #titel {
   grid-area: titel;
@@ -73,8 +95,15 @@ export default {
 }
 #content {
   grid-area: content;
+  background-color: violet;
 }
 #footer {
   grid-area: footer;
+  background-color: brown;
+}
+#junk{
+
+display: none;
+
 }
 </style>
