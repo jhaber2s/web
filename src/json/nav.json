@@ -12,30 +12,30 @@
         },
         {
             "Titel": "Responsive Web Design",
-            "Aufgaben": [
-                "Responsiv mit Flexbox Desktop-First",
-                "Responsiv mit Flexbox Mobile-First",
-                "Responsiv mit Grid Layout Desktop-First",
-                "Responsiv mit Grid Layout Mobile-First",
-                "Mögliche Klausurfragen"
-            ]
+            "Aufgaben": {
+              "U3A1":  "Responsiv mit Flexbox Desktop-First",
+              "U3A2":"Responsiv mit Flexbox Mobile-First",
+              "U3A3": "Responsiv mit Grid Layout Desktop-First",
+              "U3A4": "Responsiv mit Grid Layout Mobile-First",
+              "U3A5": "Mögliche Klausurfragen"
+            }
         },
         {
             "Titel": "JavaScript",
-            "Aufgaben": [
-                "Funktionen in JavaScript",
-                "JavaScript-Objekte",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+                "U4A1" :"Funktionen in JavaScript",
+                "U4A2":"JavaScript-Objekte",
+                "U4A3": "Mögliche Klausuraufgaben"
+            }
         },
         {
             "Titel": "DOM",
-            "Aufgaben": [
-                "Einkaufsliste",
-                "Rednerliste mit Zeitmessung",
-                "Performanzmessungen",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+               "U5A1": "Einkaufsliste",
+               "U5A2": "Rednerliste mit Zeitmessung",
+               "U5A3":"Performanzmessungen",
+               "U5A4":"Mögliche Klausuraufgaben"
+            }
         },
         {
             "Titel": "Asynchrones JavaScript",
