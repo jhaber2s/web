@@ -38,9 +38,14 @@ import sidenav from "./components/sidenav.vue";
  import U3A4 from "./components/Uebungen/U3/U3A4.vue"
  
 import U4A1 from "./components/Uebungen/U4/U4A1.vue"
+import U4A2 from "./components/Uebungen/U4/U4A2.vue"
 
  import U5A1 from "./components/Uebungen/U5/U5A1.vue"
+  import U5A2 from "./components/Uebungen/U5/U5A2.vue"
+  import U5A3 from "./components/Uebungen/U5/U5A3.vue"
  
+ import U8A1 from "./components/Uebungen/U8/U8A1.vue"
+ import U8A2 from "./components/Uebungen/U8/U8A2.vue"
  
 export default {
   name: "App",
@@ -57,7 +62,12 @@ export default {
     U3A3,
     U3A4,
     U4A1,
+      U4A2,
     U5A1,
+    U5A2,
+    U5A3,
+    U8A1,
+    U8A2,
     
     
   },

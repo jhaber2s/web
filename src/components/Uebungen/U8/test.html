@@ -1,0 +1,86 @@
+<html>
+
+<body>
+</body>
+
+<script type="module">
+
+    import { LitElement, css, html} from 'https://unpkg.com/lit-element/lit-element.js?module';
+
+    class MyElement extends LitElement {
+
+        static get properties() {
+
+            return {
+                xPoint: { type: Number  },
+                yPoint: { type: Number },
+                cxCircle1: { type: Number },
+                cyCircle1: { type: Number },
+                cxCircle2: { type: Number },
+                cyCircle2: { type: Number },
+
+            };
+        }
+
+        static get styles() {
+            return css`
+
+                .svg{
+                 width: 96%;
+                 height: auto;
+                 stroke: black;
+                 stroke-width: 3;
+                 fill: none;
+                 align: xMaxyMax;
+                }
+
+                line{
+                stroke-width: 1;
+                stroke: #999;
+                stroke-linecap: round;
+                stroke-dasharray: 5,3;
+                }
+                `;
+        }
+
+        constructor() {
+            super();
+            this.xPoint = 100;
+            this.yPoint = 250;
+            this.cxCircle1 =153;
+            this.cyCircle1 = 66;
+            this.cxCircle2 = 319;
+            this.cyCircle2 = 65;
+
+
+
+        }
+
+        render() {
+            return html`
+
+             <svg class="svg" viewbox="0 0 499 499">
+             <!-- feste Kreise-->
+              <circle id="p1" cx="100" cy="250" r="16"></circle>
+              <circle id="p2" cx="400" cy="250" r="16"></circle>
+             <!-- dynamische Kreise -->
+              <circle id="c1" cx="${this.cxCircle1}" cy="${this.cyCircle1}" r="6"></circle>
+              <circle id="c2" cx="${this.cxCircle2}" cy="${this.cyCircle2}" r="6"></circle>
+              <line id="l1" x1="100" y1="250" x2="${this.cxCircle1}" y2="${this.cyCircle1}"/>
+              <line id="l2" x1="400" y1="250" x2="${this.cxCircle2}" y2="${this.cyCircle2}"/>
+
+              <path id="eins" d="M${this.xPoint},${this.yPoint} C${this.cxCircle1},${this.cyCircle1} ${this.cxCircle2},${this.cyCircle2} 400,250"/>
+             </svg>
+
+
+                `;
+        }
+    }
+    
+
+    customElements.define('my-element', MyElement);
+</script>
+
+<my-element></my-element>
+
+</html>

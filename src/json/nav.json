@@ -39,30 +39,30 @@
         },
         {
             "Titel": "Asynchrones JavaScript",
-            "Aufgaben": [
-                "Promises",
-                "async,await",
-                "WWW-Navigator",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+                "U6A1":"Promises",
+                "U6A2":"async,await",
+                "U6A3":"WWW-Navigator",
+                "U6A4":"Mögliche Klausuraufgaben"
+            }
         },
         {
             "Titel": "Lit Elemente",
-            "Aufgaben": [
-                "Counter mit Start und Limit",
-                "Stoppuhr",
-                "Flexible Menü-Komponente",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+                "U7A1":  "Counter mit Start und Limit",
+                "U7A2": "Stoppuhr",
+                "U7A3":  "Flexible Menü-Komponente",
+                "U7A4": "Mögliche Klausuraufgaben"
+            }
         },
         {
             "Titel": "SVG",
-            "Aufgaben": [
-                "SVG-Diagramm",
-                "Statistik-Balkendiagramm",
-                "Bezier-Animation",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+                "U8A1":  "SVG-Diagramm",
+                "U8A2":  "Statistik-Balkendiagramm",
+                "U8A3": "Bezier-Animation",
+                "U8A4":  "Mögliche Klausuraufgaben"
+            }
         },
         {
             "Titel": "WebApps",

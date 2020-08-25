@@ -14,11 +14,14 @@ export default {
   name: "",
   props: {},
   data: function () {
-    return {};
+    return {
+      name : this.createButton
+      
+    };
   },
   mounted() {
     this.allSpeakers = new Map();
-    CreateSpeaker = createSpeaker
+    let CreateSpeaker = this.createSpeaker
     var speakerCount = 0;
     var button = document.getElementById("newRedner");
     button.onclick = function () {
@@ -45,6 +48,7 @@ createButton(speaker) {
         return button;
     },
     createSpeaker(id, name) {
+      let writeRow = this.writeRow
       var allSpeakers = this.allSpeakers
         allSpeakers.set(id, {
             id:id,
@@ -72,6 +76,7 @@ createButton(speaker) {
     },
 
     writeRow(speaker) {
+      let createButton = this.createButton
         var row = document.getElementById('row-' + speaker.id);
         const output = "" + speaker.name + " "
             + new Date(0, 0, 0, 0, 0, speaker.time).toLocaleTimeString() + " ";
