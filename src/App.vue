@@ -43,6 +43,10 @@ import U4A2 from "./components/Uebungen/U4/U4A2.vue"
  import U5A1 from "./components/Uebungen/U5/U5A1.vue"
   import U5A2 from "./components/Uebungen/U5/U5A2.vue"
   import U5A3 from "./components/Uebungen/U5/U5A3.vue"
+
+   import U6A1 from "./components/Uebungen/U6/U6A1.vue"
+    import U6A2 from "./components/Uebungen/U6/U6A2.vue"
+    import U6A3 from "./components/Uebungen/U6/U6A3.vue"
  
  import U8A1 from "./components/Uebungen/U8/U8A1.vue"
  import U8A2 from "./components/Uebungen/U8/U8A2.vue"
@@ -66,6 +70,9 @@ export default {
     U5A1,
     U5A2,
     U5A3,
+    U6A1,
+    U6A2,
+    U6A3,
     U8A1,
     U8A2,
     
