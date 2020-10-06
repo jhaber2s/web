@@ -37,7 +37,10 @@ import U7A3 from "./components/Uebungen/U7/U7A3.vue";
 
 import U8A1 from "./components/Uebungen/U8/U8A1.vue";
 import U8A2 from "./components/Uebungen/U8/U8A2.vue";
-import U8A3 from "./components/Uebungen/U8/U8A3.vue";
+
+import U10A1 from "./components/Uebungen/U10/U10A1.vue";
+import U10A2 from "./components/Uebungen/U10/U10A2.vue";
+
 
 
 
@@ -79,7 +82,11 @@ const routes = [
 
   { path: "/U8A1", component: U8A1 },
   { path: "/U8A2", component: U8A2 },
-  { path: "/U8A3", component: U8A3 },
+
+  { path: "/U10A1", component: U10A1 },
+  { path: "/U10A2", component: U10A2 },
+
+
  
 
   

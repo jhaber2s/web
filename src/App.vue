@@ -1,7 +1,6 @@
 <template>
   <div id="body">
     <div id="titel">
-      Titel
       <p>Huasarbeit Web Enginering</p>
     </div>
     <div id="topnav">
@@ -18,7 +17,7 @@
       <router-view id="routerview"></router-view>
     </div>
 
-    <div id="footer">Footer</div>
+   
 
     <div id="junk"></div>
   </div>
@@ -56,6 +55,7 @@ import U7A3 from "./components/Uebungen/U7/U7A3.vue";
 import U8A1 from "./components/Uebungen/U8/U8A1.vue";
 import U8A2 from "./components/Uebungen/U8/U8A2.vue";
 
+
 import U10A1 from "./components/Uebungen/U10/U10A1.vue";
 import U10A2 from "./components/Uebungen/U10/U10A2.vue";
 
@@ -86,6 +86,7 @@ export default {
     U7A3,
     U8A1,
     U8A2,
+   
     U10A1,
     U10A2,
   },
