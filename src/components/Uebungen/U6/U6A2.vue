@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="combine">Texte Kombinieren</button>
+    <button @click="combine()">Texte Kombinieren</button>
     <div id="U6A2"></div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
             t2: response2,
           };
         } catch (error) {
-          console.log(`ERROR: ${error.stack}`);
+          console.log();
         }
       }
       fetchToTextarry(

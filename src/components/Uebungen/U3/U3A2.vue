@@ -5,10 +5,10 @@
 
 
 <body>
-    <header></header>
-    <aside class="top"></aside>
-    <article></article>
-    <aside class="bottom"></aside>
+    <header>Header</header>
+    <aside class="top">Top</aside>
+    <article>Article</article>
+    <aside class="bottom">Bottom</aside>
 </body>
 
 

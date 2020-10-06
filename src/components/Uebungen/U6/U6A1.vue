@@ -34,10 +34,10 @@ export default {
             if (index < TextB.length) {
               div.innerHTML += `<p>${TextA[index]}${TextB[index]}</p>`;
             } else {
-              div.innerText += `<p>${TextA[index]}</p>`;
+              div.innerHTML += `<p>${TextA[index]}</p>`;
             }
           } else {
-            div.innerText += `<p>${TextB[index]}</p>`;
+            div.innerHTML += `<p>${TextB[index]}</p>`;
           }
         }
       });

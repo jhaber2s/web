@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button v-for="Thema in jsondata" v-bind:key="Thema" v-on:click="setSidenav(Thema.Aufgaben)" >{{Thema.Titel}}</button>
+    <button v-for="Thema in jsondata" v-bind:key="Thema" v-on:click="setSidenav(Thema.Aufgaben,Thema)" >{{Thema.Titel}}</button>
   </div>
 </template>
 
@@ -16,10 +16,10 @@ export default {
   },
 
   methods: {
-    setSidenav( aufgaben ){
-      console.log(aufgaben)
+    setSidenav( aufgaben,thema ){
+      console.log(thema)
       this.$emit("setsidenav",aufgaben)
-
+      
     },
     
   },

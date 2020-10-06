@@ -10,12 +10,12 @@
         <button id="other">Other</button>
       </div>
 
-      <div id="sidenav">
+      <div id="side">
         <h2>sidenav</h2>
       </div>
 
-      <div id="content">
-        <h2>content</h2>
+      <div id="subcontent">
+        <h2>subcontent</h2>
       </div>
     </body>
   </html>
@@ -23,31 +23,24 @@
 </template>
 
 <script>
+import menu from "./menu.json"
 export default {
   name: "",
   props: {},
   mounted() {
-    const content = document.querySelector("#content");
-    const sidebar = document.querySelector("#sidenav");
+    const subcontent = document.querySelector("#subcontent");
+    const sidebar = document.querySelector("#side");
     const html = document.querySelector("#html");
       const js = document.getElementById("js")
         const css = document.getElementById("css")
-    var jsondata;
+    var jsondata = menu;
 
-    async function fetchjson() {
-      fetch("http://www2.inf.h-brs.de/~jhaber2s/UE6/text.json")
-        .then((response) => response.json())
-        .then(function (data) {
-          jsondata = data;
-        });
-    }
+   
 
-    fetchjson();
+    
 
     html.onclick = () => {
-      if (!jsondata) {
-        fetchjson();
-      }
+    
 
       sidebar.innerHTML = `<p><button id = "headings">headings</button></p>
                                 <p><button id = "paragraphs">paragraphs</button></p>
@@ -62,21 +55,21 @@ export default {
       var tables = document.querySelector("#tables");
 
       headings.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.html.headings}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.html.headings}</p>`);
       };
 
       paragraphs.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.html.paragraphs}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.html.paragraphs}</p>`);
       };
 
       links.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.html.links}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.html.links}</p>`);
       };
       images.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.html.images}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.html.images}</p>`);
       };
       tables.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.html.tables}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.html.tables}</p>`);
       };
     };
 
@@ -94,19 +87,19 @@ export default {
       var float = document.querySelector("#float");
 
       selectors.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.css.selectors}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.css.selectors}</p>`);
       };
       colors.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.css.colors}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.css.colors}</p>`);
       };
       boxes.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.css.boxes}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.css.boxes}</p>`);
       };
       display.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.css.display}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.css.display}</p>`);
       };
       float.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.css.float}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.css.float}</p>`);
       };
     };
 
@@ -128,25 +121,26 @@ export default {
       var json = document.querySelector("#json");
 
       functions.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.functions}</p>`);
+        
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.functions}</p>`);
       };
       objects.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.objects}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.objects}</p>`);
       };
       scope.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.scope}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.scope}</p>`);
       };
       events.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.events}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.events}</p>`);
       };
       hoisting.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.hoisting}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.hoisting}</p>`);
       };
       strictmode.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.strict_mode}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.strict_mode}</p>`);
       };
       json.onclick = async function () {
-        await (content.innerHTML = `<p>${jsondata.menues.javascript.json}</p>`);
+        await (subcontent.innerHTML = `<p>${jsondata.menues.javascript.json}</p>`);
       };
     };
   },
@@ -178,7 +172,7 @@ body {
   height: 30%;
 }
 
-#content {
+#subcontent {
   background-color: cornsilk;
   height: 80%;
   width: 70%;

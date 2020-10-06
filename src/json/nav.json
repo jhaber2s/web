@@ -16,16 +16,16 @@
               "U3A1":  "Responsiv mit Flexbox Desktop-First",
               "U3A2":"Responsiv mit Flexbox Mobile-First",
               "U3A3": "Responsiv mit Grid Layout Desktop-First",
-              "U3A4": "Responsiv mit Grid Layout Mobile-First",
-              "U3A5": "Mögliche Klausurfragen"
+              "U3A4": "Responsiv mit Grid Layout Mobile-First"
+              
             }
         },
         {
             "Titel": "JavaScript",
             "Aufgaben": {
                 "U4A1" :"Funktionen in JavaScript",
-                "U4A2":"JavaScript-Objekte",
-                "U4A3": "Mögliche Klausuraufgaben"
+                "U4A2":"JavaScript-Objekte"
+               
             }
         },
         {
@@ -33,8 +33,8 @@
             "Aufgaben": {
                "U5A1": "Einkaufsliste",
                "U5A2": "Rednerliste mit Zeitmessung",
-               "U5A3":"Performanzmessungen",
-               "U5A4":"Mögliche Klausuraufgaben"
+               "U5A3":"Performanzmessungen"
+              
             }
         },
         {
@@ -42,8 +42,8 @@
             "Aufgaben": {
                 "U6A1":"Promises",
                 "U6A2":"async,await",
-                "U6A3":"WWW-Navigator",
-                "U6A4":"Mögliche Klausuraufgaben"
+                "U6A3":"WWW-Navigator"
+               
             }
         },
         {
@@ -51,8 +51,8 @@
             "Aufgaben": {
                 "U7A1":  "Counter mit Start und Limit",
                 "U7A2": "Stoppuhr",
-                "U7A3":  "Flexible Menü-Komponente",
-                "U7A4": "Mögliche Klausuraufgaben"
+                "U7A3":  "Flexible Menü-Komponente"
+                
             }
         },
         {
@@ -60,58 +60,22 @@
             "Aufgaben": {
                 "U8A1":  "SVG-Diagramm",
                 "U8A2":  "Statistik-Balkendiagramm",
-                "U8A3": "Bezier-Animation",
-                "U8A4":  "Mögliche Klausuraufgaben"
+                "U8A3": "Bezier-Animation"
+                
             }
         },
-        {
-            "Titel": "WebApps",
-            "Aufgaben": [
-                "Routing",
-                "State Management"
-            ]
-        },
+        
         {
             "Titel": "Vue.js",
-            "Aufgaben": [
-                "Counter in Vue.js",
-                "Menü-Komponente",
-                "Vue.js WWW-Navigator",
-                "Mögliche Klausuraufgaben"
-            ]
-        },
-        {
-            "Titel": "MEVN",
-            "Aufgaben": [
-                "Erweiterung der MEVN-App",
-                "MEVN WWW-Navigator",
-                "Mögliche Klausuraufgaben"
-            ]
-        },
-        {
-            "Titel": "PHP",
-            "Aufgaben": [
-                "Registrierung mit PHP",
-                "Login mit PHP",
-                "WWW-Navigator zum Content-Editor ausbauen",
-                "Code Review zu Vue.js"
-            ]
-        },
-        {
-            "Titel": "React",
-            "Aufgaben": [
-                "React Tutorial"
-            ]
-        },
-        {
-            "Titel": "Web App Security",
-            "Aufgaben": [
-                "XSS",
-                "Sicherer Array Wrapper",
-                "Sicherheitslücken finden",
-                "Mögliche Klausuraufgaben"
-            ]
+            "Aufgaben": {
+                "U10A1":"Counter in Vue.js",
+                "U10A2":"Menü-Komponente"
+             
+            }
         }
+    
+       
+        
     ]
   
 }

@@ -27,6 +27,7 @@ export default {
       openAufgabe(aufgabe){
 
           this.$emit("openAufgabe",aufgabe)
+           location.hash = aufgabe;
       }
 
   },

@@ -1,9 +1,10 @@
 <template>
   <div>
+       <h3>Code in der Console</h3>
     <button @click="A1()">Fabrikfunktion Warteschlange</button>
     <button @click="A2()">Fabrikfunktion ungeordnete Menge</button>
     <button @click="A3()">Fabrikfunktion ungeordnete Multi-Mengen</button>
-    <h4>Funktion</h4>
+  
     <p id="U4A2p1"></p>
   </div>
 </template>
@@ -14,7 +15,8 @@ export default {
   props: {},
   methods: {
     A1() {
-      document.getElementById("U4A2p1").innerHTML = this.fifo;
+     
+      console.log("U4A2p1",this.fifo)
     },
     fifo() {
       var arr = [];
@@ -32,7 +34,8 @@ export default {
     },
 
     A2() {
-      document.getElementById("U4A2p1").innerHTML = this.disordered;
+
+      console.log("U4A2p1",this.disordered)
     },
     disordered() {
       var arr = [];
@@ -49,7 +52,8 @@ export default {
       };
     },
     A3() {
-      document.getElementById("U4A2p1").innerHTML = this.multi;
+   
+      console.log("U4A2p1",this.multi)
     },
     multi() {
       var arr = [];

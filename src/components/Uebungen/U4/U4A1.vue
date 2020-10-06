@@ -1,8 +1,10 @@
 <template>
   <div>
+    <h3>Code in der Console</h3>
     <input type="text" id="U4A1Input1" />
     <input type="text" id="U4A1Input2" />
     <input type="text" id="U4A1Input3" />
+    <br>
     <button @click="A1(readArgument1())">identity_function()</button>
     <button @click="A2(readArgument1(),readArgument2())">addf()</button>
     <button @click="A3(readArgument1(),readArgument2())">applyf()</button>
@@ -39,6 +41,7 @@ export default {
     },
     A1(arg) {
       document.getElementById("U4A1p1").innerHTML = this.idetify_function(arg);
+      console.log("A1: ",this.idetify_function)
       var erg = this.idetify_function(arg);
       document.getElementById("U4A1p2").innerText = erg();
     },
@@ -53,10 +56,12 @@ export default {
       };
     },
     A2(arg1, arg2) {
+         console.log("A2:",this.addf)
       document.getElementById("U4A1p1").innerHTML = this.addf();
       document.getElementById("U4A1p2").innerText = this.addf(arg1)(arg2);
     },
     A3(arg1, arg2) {
+      console.log("A3:",this.applyf)
       document.getElementById("U4A1p1").innerHTML = this.applyf();
       document.getElementById("U4A1p2").innerText = this.applyf(this.add)(arg1)(
         arg2
@@ -73,6 +78,7 @@ export default {
       };
     },
     A4(arg1, arg2) {
+      console.log("A4:",this.curry)
       document.getElementById("U4A1p1").innerHTML = this.curry(this.add, arg1);
       document.getElementById("U4A1p2").innerText = this.curry(
         this.add,
@@ -88,6 +94,7 @@ export default {
       return this.addf(x)(1);
     },
     A5(arg1) {
+      console.log("A5:",this.inc)
       document.getElementById("U4A1p1").innerHTML = this.inc(arg1);
     },
     methodize(func) {
@@ -100,6 +107,7 @@ export default {
       return y;
     },
     A6(arg1, arg2) {
+      console.log("A6:",this.methodize)
       document.getElementById("U4A1p1").innerHTML = this.methodize(this.add);
       Number.prototype.add = this.methodize(this.add);
       document.getElementById("U4A1p2").innerHTML = parseInt(arg1).add(
@@ -107,6 +115,7 @@ export default {
       );
     },
     A7(arg1, arg2) {
+      console.log("A7",this.demethodize)
       Number.prototype.add = this.methodize(this.add);
       document.getElementById("U4A1p1").innerHTML = this.demethodize(
         Number.prototype.add
@@ -121,6 +130,7 @@ export default {
       };
     },
     A8(arg1) {
+      console.log("A8:",this.twice)
       document.getElementById("U4A1p1").innerHTML = this.twice(this.add);
       document.getElementById("U4A1p2").innerHTML = this.twice(this.add)(arg1);
     },
@@ -130,6 +140,7 @@ export default {
       };
     },
     A9(arg1) {
+      console.log("A9:",this.composeu)
       document.getElementById("U4A1p1").innerHTML = this.composeu(
         this.double,
         this.square
@@ -151,6 +162,7 @@ export default {
       };
     },
     A10(arg1, arg2, arg3) {
+      console.log("A10:",this.composeb)
       document.getElementById("U4A1p1").innerHTML = this.composeb(
         this.add,
         this.mul
@@ -166,6 +178,7 @@ export default {
       };
     },
     A11() {
+      console.log("A11:",this.once)
       document.getElementById("U4A1p1").innerHTML = this.once(this.add);
     },
     once(op) {
@@ -179,7 +192,9 @@ export default {
         }
       };
     },
-    A12() {document.getElementById("U4A1p1").innerHTML = this.counterf(1);},
+    A12() {
+      console.log("A12",this.counterf)
+      document.getElementById("U4A1p1").innerHTML = this.counterf(1);},
     counterf(x) {
       var count = { x: x };
       count.inc = function () {
@@ -192,7 +207,9 @@ export default {
 
       return count;
     },
-    A13(){document.getElementById("U4A1p1").innerHTML = this.revokeable(this.inc)},
+    A13(){
+      console.log("A13:",this.revokeable)
+      document.getElementById("U4A1p1").innerHTML = this.revokeable(this.inc)},
      revokeable(op){
     var flag =true;
     return{

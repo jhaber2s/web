@@ -3,10 +3,10 @@
 
 
 <body>
-<header></header>
-<aside class="left"></aside>
-<article></article>
-<aside class="right"></aside>
+<header>Header</header>
+<aside class="left">Left</aside>
+<article>Article</article>
+<aside class="right">Right</aside>
 </body>
 
 
